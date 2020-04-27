@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  FirstViewController.swift
 //  weddingBudget
 //
 //  Created by Elizabeth Wingate on 4/27/20.
@@ -8,29 +8,26 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class FirstViewController: UIViewController {
 
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
         setUpElements()
     }
-
-    
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
     
     func setUpElements() {
-
-        errorLabel.alpha = 0
-
-        Utilities.styleTextField(emailTextField)
-        Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(loginButton)
+        
+        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(loginButton)
         
     }
-    
+
     /*
     // MARK: - Navigation
 
@@ -40,6 +37,5 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func loginTapped(_ sender: Any) {
-    }
+
 }

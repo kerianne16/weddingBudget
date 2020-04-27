@@ -21,6 +21,8 @@
 		B5D2A32A2457664700F046C6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3292457664700F046C6 /* SignUpViewController.swift */; };
 		B5D2A32C2457666A00F046C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A32B2457666A00F046C6 /* HomeViewController.swift */; };
 		B5D2A32F24576EED00F046C6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A32E24576EED00F046C6 /* Utilities.swift */; };
+		B5D2A3312457718400F046C6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3302457718400F046C6 /* FirstViewController.swift */; };
+		B5D2A333245773CF00F046C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D2A332245773CF00F046C6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		B5D2A3292457664700F046C6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5D2A32B2457666A00F046C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5D2A32E24576EED00F046C6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B5D2A3302457718400F046C6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B5D2A332245773CF00F046C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F9A049DD39CDF4FF408EB77A /* Pods_weddingBudget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weddingBudget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,7 @@
 				553938FE245733400000F29C /* Assets.xcassets */,
 				55393900245733400000F29C /* LaunchScreen.storyboard */,
 				55393903245733400000F29C /* Info.plist */,
+				B5D2A332245773CF00F046C6 /* GoogleService-Info.plist */,
 			);
 			path = weddingBudget;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 				B5D2A3272457663600F046C6 /* LoginViewController.swift */,
 				B5D2A3292457664700F046C6 /* SignUpViewController.swift */,
 				B5D2A32B2457666A00F046C6 /* HomeViewController.swift */,
+				B5D2A3302457718400F046C6 /* FirstViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			files = (
 				55393902245733400000F29C /* LaunchScreen.storyboard in Resources */,
 				553938FF245733400000F29C /* Assets.xcassets in Resources */,
+				B5D2A333245773CF00F046C6 /* GoogleService-Info.plist in Resources */,
 				55393912245745C30000F29C /* pieChart.storyboard in Resources */,
 				553938FD2457333C0000F29C /* Main.storyboard in Resources */,
 			);
@@ -265,6 +272,7 @@
 				5539391824574AE60000F29C /* LogIn.swift in Sources */,
 				B5D2A32C2457666A00F046C6 /* HomeViewController.swift in Sources */,
 				5539391424574ABF0000F29C /* logInController.swift in Sources */,
+				B5D2A3312457718400F046C6 /* FirstViewController.swift in Sources */,
 				5539391624574AD60000F29C /* CheckListViewController.swift in Sources */,
 				B5D2A32F24576EED00F046C6 /* Utilities.swift in Sources */,
 				553938F62457333C0000F29C /* AppDelegate.swift in Sources */,
