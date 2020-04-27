@@ -51,7 +51,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jsh-Jx-OYK">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mtF-Ko-ipi" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabVC" automaticallyAdjustsScrollViewInsets="NO" id="mtF-Ko-ipi" customClass="TabBarController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eyf-cK-8a7">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -271,7 +271,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IKR-wS-UWL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-Df-Sqx">
                                         <rect key="frame" x="0.0" y="140" width="334" height="40"/>

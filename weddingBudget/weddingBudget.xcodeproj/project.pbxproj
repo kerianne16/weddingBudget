@@ -25,6 +25,7 @@
 		B5D2A333245773CF00F046C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D2A332245773CF00F046C6 /* GoogleService-Info.plist */; };
 		B5D2A3352457841D00F046C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3342457841D00F046C6 /* Constants.swift */; };
 		B5D2A33C245790C900F046C6 /* loginbg.mov in Resources */ = {isa = PBXBuildFile; fileRef = B5D2A33B245790C900F046C6 /* loginbg.mov */; };
+		B5D2A33E2457977A00F046C6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A33D2457977A00F046C6 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		B5D2A332245773CF00F046C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5D2A3342457841D00F046C6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5D2A33B245790C900F046C6 /* loginbg.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = loginbg.mov; sourceTree = "<group>"; };
+		B5D2A33D2457977A00F046C6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F9A049DD39CDF4FF408EB77A /* Pods_weddingBudget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weddingBudget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			children = (
 				B5D2A32E24576EED00F046C6 /* Utilities.swift */,
 				B5D2A3342457841D00F046C6 /* Constants.swift */,
+				B5D2A33D2457977A00F046C6 /* TabBarController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				B5D2A3312457718400F046C6 /* FirstViewController.swift in Sources */,
 				5539391624574AD60000F29C /* CheckListViewController.swift in Sources */,
 				B5D2A32F24576EED00F046C6 /* Utilities.swift in Sources */,
+				B5D2A33E2457977A00F046C6 /* TabBarController.swift in Sources */,
 				553938F62457333C0000F29C /* AppDelegate.swift in Sources */,
 				553938F82457333C0000F29C /* SceneDelegate.swift in Sources */,
 			);
