@@ -6,5 +6,9 @@ target 'weddingBudget' do
 
   # Pods for weddingBudget
   pod 'Charts', '~> 3.5'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
 end
