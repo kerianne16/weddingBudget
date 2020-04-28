@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		5539391424574ABF0000F29C /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391324574ABF0000F29C /* logInController.swift */; };
 		5539391624574AD60000F29C /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391524574AD60000F29C /* CheckListViewController.swift */; };
 		5539391824574AE60000F29C /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391724574AE60000F29C /* LogIn.swift */; };
+		5539392024588E810000F29C /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391F24588E810000F29C /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5539391324574ABF0000F29C /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		5539391524574AD60000F29C /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
 		5539391724574AE60000F29C /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		5539391F24588E810000F29C /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 		5603C8D5E15D2BBDC818AD3C /* Pods-weddingBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.release.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.release.xcconfig"; sourceTree = "<group>"; };
 		A3975850639F5CB38DF43BB2 /* Pods-weddingBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.debug.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.debug.xcconfig"; sourceTree = "<group>"; };
 		F9A049DD39CDF4FF408EB77A /* Pods_weddingBudget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weddingBudget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		553938F42457333C0000F29C /* weddingBudget */ = {
 			isa = PBXGroup;
 			children = (
+				5539391E24588E650000F29C /* Pie Chart */,
 				5539390D245741840000F29C /* Model Controllers */,
 				5539390C2457417D0000F29C /* View Controllers */,
 				5539390B245741760000F29C /* Model */,
@@ -107,6 +110,14 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		5539391E24588E650000F29C /* Pie Chart */ = {
+			isa = PBXGroup;
+			children = (
+				5539391F24588E810000F29C /* PieChartViewController.swift */,
+			);
+			path = "Pie Chart";
+			sourceTree = "<group>";
+		};
 		B8EA6624F895A40F9898CC00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +132,6 @@
 				A3975850639F5CB38DF43BB2 /* Pods-weddingBudget.debug.xcconfig */,
 				5603C8D5E15D2BBDC818AD3C /* Pods-weddingBudget.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -241,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5539392024588E810000F29C /* PieChartViewController.swift in Sources */,
 				5539391824574AE60000F29C /* LogIn.swift in Sources */,
 				5539391424574ABF0000F29C /* logInController.swift in Sources */,
 				5539391624574AD60000F29C /* CheckListViewController.swift in Sources */,
