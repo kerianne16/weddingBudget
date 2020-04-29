@@ -17,6 +17,7 @@
 		5539391424574ABF0000F29C /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391324574ABF0000F29C /* logInController.swift */; };
 		5539391624574AD60000F29C /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391524574AD60000F29C /* CheckListViewController.swift */; };
 		5539391824574AE60000F29C /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391724574AE60000F29C /* LogIn.swift */; };
+		B5A72D89245896C400C8D141 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A72D88245896C400C8D141 /* SettingsViewController.swift */; };
 		B5D2A3282457663600F046C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3272457663600F046C6 /* LoginViewController.swift */; };
 		B5D2A32A2457664700F046C6 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3292457664700F046C6 /* SignUpViewController.swift */; };
 		B5D2A32C2457666A00F046C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A32B2457666A00F046C6 /* HomeViewController.swift */; };
@@ -42,6 +43,7 @@
 		5539391724574AE60000F29C /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		5603C8D5E15D2BBDC818AD3C /* Pods-weddingBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.release.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.release.xcconfig"; sourceTree = "<group>"; };
 		A3975850639F5CB38DF43BB2 /* Pods-weddingBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.debug.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A72D88245896C400C8D141 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B5D2A3272457663600F046C6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5D2A3292457664700F046C6 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5D2A32B2457666A00F046C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				B5D2A3292457664700F046C6 /* SignUpViewController.swift */,
 				B5D2A32B2457666A00F046C6 /* HomeViewController.swift */,
 				B5D2A3302457718400F046C6 /* FirstViewController.swift */,
+				B5A72D88245896C400C8D141 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				5539391624574AD60000F29C /* CheckListViewController.swift in Sources */,
 				B5D2A32F24576EED00F046C6 /* Utilities.swift in Sources */,
 				B5D2A33E2457977A00F046C6 /* TabBarController.swift in Sources */,
+				B5A72D89245896C400C8D141 /* SettingsViewController.swift in Sources */,
 				553938F62457333C0000F29C /* AppDelegate.swift in Sources */,
 				553938F82457333C0000F29C /* SceneDelegate.swift in Sources */,
 			);

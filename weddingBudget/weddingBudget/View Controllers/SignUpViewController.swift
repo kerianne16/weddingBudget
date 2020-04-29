@@ -90,11 +90,9 @@ class SignUpViewController: UIViewController {
             self.showError("Error saving user data")
         }
 }
-                            
           self.transitionToHome()
     }
 }
-                    
     }
 }
     func showError(_ message:String) {
