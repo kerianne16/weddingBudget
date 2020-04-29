@@ -11,17 +11,20 @@ import Photos
 import CoreImage
 
 class SettingsViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
+  
+    @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var brideTextfield: UITextField!
     @IBOutlet weak var groomTextfield: UITextField!
     @IBOutlet weak var weddingDateTextfield: UITextField!
     
     let picker = UIDatePicker()
+    var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createDatePicker()
+        imagePicker.delegate = self
     }
     
     func createDatePicker() {
@@ -58,4 +61,18 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
         
     }
     
+    @IBAction func addPhotoButton(_ sender: Any) {
+        
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true, completion: nil)
+    }
+
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            img.image = image
+        }
+        dismiss(animated: true, completion: nil)
+    }
 }
