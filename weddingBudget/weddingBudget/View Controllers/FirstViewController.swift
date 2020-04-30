@@ -15,7 +15,6 @@ class FirstViewController: UIViewController {
     var videoPlayerLayer:AVPlayerLayer?
     
     @IBOutlet weak var signUpButton: UIButton!
-    
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {

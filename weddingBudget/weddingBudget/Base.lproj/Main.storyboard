@@ -15,221 +15,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BRIDE &amp; GROOMS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITm-VA-Ojp">
-                                <rect key="frame" x="20" y="111" width="374" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3w-fJ-FOw">
+                                <rect key="frame" x="183" y="417" width="48" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="29"/>
-                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WEDDING!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Qe-w6I">
-                                <rect key="frame" x="20" y="153" width="374" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="28"/>
-                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <color key="titleShadowColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPhotoButton:" destination="bqN-aY-fih" eventType="touchUpInside" id="qoM-qb-hPF"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qs8-cF-J6v">
-                                <rect key="frame" x="87" y="223" width="240" height="213"/>
+                                <rect key="frame" x="57" y="129" width="301" height="287"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="234 DAYS UNTIL I SAY &quot;I DO!!&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1R-rg-YPg">
-                                <rect key="frame" x="89" y="508" width="236" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WEDDING DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lW-Py-XZa">
+                                <rect key="frame" x="20" y="498" width="172" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Light" family="Noto Sans Myanmar" pointSize="23"/>
+                                <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Something to Remember" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydB-0i-9dM">
+                                <rect key="frame" x="94" y="89" width="227" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floral2" translatesAutoresizingMaskIntoConstraints="NO" id="L8Q-xJ-zZR">
+                                <rect key="frame" x="158" y="30" width="99" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wedding Date:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w4d-rf-C0m">
+                                <rect key="frame" x="20" y="547" width="374" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4Kt-8U-RNC"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JR8-y7-T9b">
-                        <barButtonItem key="rightBarButtonItem" image="triangle" catalog="system" id="9qK-aQ-aDx">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="JG2-HX-502" kind="popoverPresentation" popoverAnchorBarButtonItem="9qK-aQ-aDx" id="c6f-D2-j7O">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" id="6bC-jT-Bfu"/>
+                    <navigationItem key="navigationItem" id="JR8-y7-T9b"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="brideAndGroomNameLabel" destination="ITm-VA-Ojp" id="vLp-DT-4ag"/>
-                        <outlet property="countdownLabel" destination="R1R-rg-YPg" id="K70-14-3pd"/>
-                        <outlet property="personalizedPhotoImageView" destination="qs8-cF-J6v" id="HKM-C2-H3a"/>
+                        <outlet property="img" destination="qs8-cF-J6v" id="hSN-Vc-zNu"/>
+                        <outlet property="weddingDatePicker" destination="w4d-rf-C0m" id="Vqy-8J-xTK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcq-Hh-8IU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166.66666666666669" y="878.57142857142856"/>
-        </scene>
-        <!--Settings View Controller-->
-        <scene sceneID="iEc-lQ-0dq">
-            <objects>
-                <viewController id="JG2-HX-502" customClass="SettingsViewController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2BY-hm-NvH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Da-3N-j1l">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="42"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUA-BI-WfE">
-                                <rect key="frame" x="0.0" y="84" width="414" height="812"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqi-kW-FR9">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="758"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Dm-Gz-21Z">
-                                                <rect key="frame" x="87" y="19" width="240" height="214"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1CF-PR-eC3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="214"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRIDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PU-e2-eVU">
-                                                <rect key="frame" x="20" y="270" width="62" height="27"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="27" id="ej9-oC-RmV"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
-                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GROOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOa-Ad-0TT">
-                                                <rect key="frame" x="20" y="367" width="78" height="27"/>
-                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
-                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD A DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyD-cP-KU2">
-                                                <rect key="frame" x="20" y="464" width="119" height="27"/>
-                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
-                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Groom:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewM-bq-A1s">
-                                                <rect key="frame" x="20" y="402" width="374" height="46"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="46" id="fCE-Pg-1Ir"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wedding Date:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TDo-ds-BD9">
-                                                <rect key="frame" x="20" y="498" width="374" height="47"/>
-                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bride:" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="lHB-1r-55W">
-                                                <rect key="frame" x="20" y="305" width="374" height="47"/>
-                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QK4-6f-f2t">
-                                                <rect key="frame" x="118" y="576" width="178" height="30"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <state key="normal" title="SAVE">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="saveButton:" destination="JG2-HX-502" eventType="touchUpInside" id="WVt-pj-Vxq"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtW-C1-1t8">
-                                                <rect key="frame" x="183" y="241" width="48" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" image="plus" catalog="system">
-                                                    <color key="titleShadowColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="addPhotoButton:" destination="JG2-HX-502" eventType="touchUpInside" id="ebL-dq-pUJ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstItem="uyD-cP-KU2" firstAttribute="top" secondItem="ewM-bq-A1s" secondAttribute="bottom" constant="16" id="30b-gb-g94"/>
-                                            <constraint firstAttribute="trailing" secondItem="QK4-6f-f2t" secondAttribute="trailing" constant="118" id="7yq-pt-xKZ"/>
-                                            <constraint firstItem="5Dm-Gz-21Z" firstAttribute="top" secondItem="rqi-kW-FR9" secondAttribute="top" constant="19" id="93g-bh-Ovs"/>
-                                            <constraint firstItem="ewM-bq-A1s" firstAttribute="top" secondItem="gOa-Ad-0TT" secondAttribute="bottom" constant="8" symbolic="YES" id="9kR-zt-ozS"/>
-                                            <constraint firstAttribute="trailing" secondItem="lHB-1r-55W" secondAttribute="trailing" constant="20" id="BOt-VY-Hra"/>
-                                            <constraint firstAttribute="trailing" secondItem="ewM-bq-A1s" secondAttribute="trailing" constant="20" id="HZT-uf-HAr"/>
-                                            <constraint firstAttribute="trailing" secondItem="TDo-ds-BD9" secondAttribute="trailing" constant="20" id="KqY-61-kf5"/>
-                                            <constraint firstItem="lHB-1r-55W" firstAttribute="top" secondItem="0PU-e2-eVU" secondAttribute="bottom" constant="8" symbolic="YES" id="M9r-eD-dUg"/>
-                                            <constraint firstItem="gOa-Ad-0TT" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="Nf5-5u-bW5"/>
-                                            <constraint firstAttribute="trailing" secondItem="0PU-e2-eVU" secondAttribute="trailing" constant="332" id="Rw0-DS-z4Y"/>
-                                            <constraint firstItem="0PU-e2-eVU" firstAttribute="top" secondItem="rqi-kW-FR9" secondAttribute="top" constant="270" id="Shl-1u-eWX"/>
-                                            <constraint firstItem="QK4-6f-f2t" firstAttribute="top" secondItem="TDo-ds-BD9" secondAttribute="bottom" constant="31" id="Wf0-8m-rmZ"/>
-                                            <constraint firstItem="5Dm-Gz-21Z" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="87" id="WgG-HE-adR"/>
-                                            <constraint firstAttribute="trailing" secondItem="gOa-Ad-0TT" secondAttribute="trailing" constant="316" id="ZBP-wN-o5G"/>
-                                            <constraint firstItem="TDo-ds-BD9" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="eDQ-om-r9E"/>
-                                            <constraint firstAttribute="trailing" secondItem="5Dm-Gz-21Z" secondAttribute="trailing" constant="87" id="gdd-vb-9Wj"/>
-                                            <constraint firstItem="uyD-cP-KU2" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="hfx-Ag-lQd"/>
-                                            <constraint firstAttribute="bottom" secondItem="QK4-6f-f2t" secondAttribute="bottom" constant="152" id="hvM-WW-DIs"/>
-                                            <constraint firstAttribute="bottom" secondItem="ewM-bq-A1s" secondAttribute="bottom" constant="310" id="lVC-Q5-eEW"/>
-                                            <constraint firstItem="0PU-e2-eVU" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="m6z-Md-Se7"/>
-                                            <constraint firstAttribute="trailing" secondItem="uyD-cP-KU2" secondAttribute="trailing" constant="275" id="ofg-ai-lGV"/>
-                                            <constraint firstItem="QK4-6f-f2t" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="118" id="sNt-t5-auB"/>
-                                            <constraint firstItem="lHB-1r-55W" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="unD-ME-Zdy"/>
-                                            <constraint firstItem="ewM-bq-A1s" firstAttribute="leading" secondItem="rqi-kW-FR9" secondAttribute="leading" constant="20" id="xC9-az-WcX"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="rqi-kW-FR9" secondAttribute="bottom" constant="54" id="CUe-wP-Ach"/>
-                                    <constraint firstItem="rqi-kW-FR9" firstAttribute="top" secondItem="ymh-zU-Ssq" secondAttribute="top" id="Oa8-KL-qZa"/>
-                                    <constraint firstAttribute="trailing" secondItem="rqi-kW-FR9" secondAttribute="trailing" id="dYU-MP-LFX"/>
-                                    <constraint firstItem="l4K-6y-cLa" firstAttribute="bottom" secondItem="rqi-kW-FR9" secondAttribute="bottom" constant="54" id="hM1-yb-fOv"/>
-                                    <constraint firstItem="rqi-kW-FR9" firstAttribute="leading" secondItem="BUA-BI-WfE" secondAttribute="leading" id="oAS-OD-KCu"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="ymh-zU-Ssq"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="l4K-6y-cLa"/>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUSTOM PROFILE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXP-au-tyZ">
-                                <rect key="frame" x="118" y="69" width="178" height="27"/>
-                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="x4i-r9-bLO" firstAttribute="trailing" secondItem="aXP-au-tyZ" secondAttribute="trailing" constant="118" id="05D-Uj-TZs"/>
-                            <constraint firstItem="aXP-au-tyZ" firstAttribute="leading" secondItem="x4i-r9-bLO" secondAttribute="leading" constant="118" id="R7L-dy-ciD"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="BUA-BI-WfE" secondAttribute="bottom" constant="-88" id="XVU-bh-vSC"/>
-                            <constraint firstItem="aXP-au-tyZ" firstAttribute="centerX" secondItem="8Da-3N-j1l" secondAttribute="centerX" id="YLW-2f-nIx"/>
-                            <constraint firstItem="aXP-au-tyZ" firstAttribute="centerX" secondItem="BUA-BI-WfE" secondAttribute="centerX" id="ZGG-pk-B1n"/>
-                            <constraint firstItem="x4i-r9-bLO" firstAttribute="bottom" secondItem="aXP-au-tyZ" secondAttribute="bottom" constant="712" id="Zju-Tr-0RP"/>
-                            <constraint firstItem="8Da-3N-j1l" firstAttribute="leading" secondItem="BUA-BI-WfE" secondAttribute="leading" id="dfG-Z6-e8F"/>
-                            <constraint firstItem="8Da-3N-j1l" firstAttribute="leading" secondItem="2BY-hm-NvH" secondAttribute="leading" id="gRg-79-egA"/>
-                            <constraint firstItem="8Da-3N-j1l" firstAttribute="top" secondItem="x4i-r9-bLO" secondAttribute="top" id="k1j-BU-q9M"/>
-                            <constraint firstItem="aXP-au-tyZ" firstAttribute="top" secondItem="8Da-3N-j1l" secondAttribute="bottom" constant="27" id="pep-j0-QJg"/>
-                            <constraint firstItem="BUA-BI-WfE" firstAttribute="top" secondItem="8Da-3N-j1l" secondAttribute="bottom" constant="42" id="tx6-PT-WSI"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="x4i-r9-bLO"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="tlg-ow-hru"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="brideTextfield" destination="lHB-1r-55W" id="roy-MJ-ZdU"/>
-                        <outlet property="groomTextfield" destination="ewM-bq-A1s" id="WUN-9L-pJX"/>
-                        <outlet property="img" destination="1CF-PR-eC3" id="Ov7-zy-jKJ"/>
-                        <outlet property="weddingDateTextfield" destination="TDo-ds-BD9" id="PUx-26-Uxe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ldZ-MQ-bIj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="878.57142857142856"/>
+            <point key="canvasLocation" x="-594.20289855072474" y="849.77678571428567"/>
         </scene>
         <!--Item-->
         <scene sceneID="pXB-U7-SG7">
@@ -258,9 +99,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZCH-jg-2TU" kind="relationship" relationship="viewControllers" id="0nA-f7-AfW"/>
-                        <segue destination="gkg-a2-66s" kind="relationship" relationship="viewControllers" id="BFt-xA-qer"/>
                         <segue destination="M7V-VG-VZD" kind="relationship" relationship="viewControllers" id="dUc-3t-BKm"/>
+                        <segue destination="ZCH-jg-2TU" kind="relationship" relationship="viewControllers" id="0nA-f7-AfW"/>
+                        <segue destination="bqN-aY-fih" kind="relationship" relationship="viewControllers" id="S4Y-2Z-Zvg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHB-i3-bUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,7 +242,7 @@
                                             <action selector="signUpTapped:" destination="VgF-Rj-m3I" eventType="touchUpInside" id="7cP-8K-Kof"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2e-K0-4gC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2e-K0-4gC">
                                         <rect key="frame" x="0.0" y="340" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="awc-1O-iiL"/>
@@ -482,7 +323,7 @@
                                             <action selector="loginTapped:" destination="lKC-o4-6a0" eventType="touchUpInside" id="Oui-Ws-Frq"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-g1-NpM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-g1-NpM">
                                         <rect key="frame" x="0.0" y="200" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="eMW-a4-Mvw"/>
@@ -531,30 +372,10 @@
             </objects>
             <point key="canvasLocation" x="-1432" y="-1138"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="jbm-XQ-xif">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gkg-a2-66s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" selectedImage="rings" springLoaded="YES" id="2aj-Sl-snX"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sEw-9z-SIJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bqN-aY-fih" kind="relationship" relationship="rootViewController" id="stf-3a-lrQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9bA-bb-C9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-594" y="879"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="floral2" width="1184" height="663"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="rings" width="33.333332061767578" height="33.333332061767578"/>
-        <image name="triangle" catalog="system" width="128" height="112"/>
     </resources>
 </document>
