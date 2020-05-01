@@ -75,7 +75,7 @@
         <!--Item-->
         <scene sceneID="pXB-U7-SG7">
             <objects>
-                <viewController id="M7V-VG-VZD" sceneMemberID="viewController">
+                <viewController id="M7V-VG-VZD" customClass="CheckListViewController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xZt-Xh-qN8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -17,6 +17,12 @@
 		5539391424574ABF0000F29C /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391324574ABF0000F29C /* logInController.swift */; };
 		5539391624574AD60000F29C /* CheckListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391524574AD60000F29C /* CheckListViewController.swift */; };
 		5539391824574AE60000F29C /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391724574AE60000F29C /* LogIn.swift */; };
+		5539392024588E810000F29C /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539391F24588E810000F29C /* PieChartViewController.swift */; };
+		55393924245B34060000F29C /* checklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55393922245B34060000F29C /* checklist.xcdatamodeld */; };
+		55393926245B51660000F29C /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55393925245B51660000F29C /* ChecklistItem.swift */; };
+		5539392C245B77D30000F29C /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539392B245B77D30000F29C /* Date+Extensions.swift */; };
+		5539392E245B79000000F29C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539392D245B79000000F29C /* TaskRow.swift */; };
+		55393930245B7B370000F29C /* AddNewToDoTaskHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5539392F245B7B370000F29C /* AddNewToDoTaskHeaderView.swift */; };
 		B5385127245B2C28008F44BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5385126245B2C28008F44BD /* User.swift */; };
 		B5A72D89245896C400C8D141 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A72D88245896C400C8D141 /* SettingsViewController.swift */; };
 		B5D2A3282457663600F046C6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2A3272457663600F046C6 /* LoginViewController.swift */; };
@@ -42,6 +48,12 @@
 		5539391324574ABF0000F29C /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		5539391524574AD60000F29C /* CheckListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewController.swift; sourceTree = "<group>"; };
 		5539391724574AE60000F29C /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		5539391F24588E810000F29C /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		55393923245B34060000F29C /* checklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = checklist.xcdatamodel; sourceTree = "<group>"; };
+		55393925245B51660000F29C /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChecklistItem.swift; path = "weddingBudget/Pie Chart/ChecklistItem.swift"; sourceTree = SOURCE_ROOT; };
+		5539392B245B77D30000F29C /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		5539392D245B79000000F29C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		5539392F245B7B370000F29C /* AddNewToDoTaskHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewToDoTaskHeaderView.swift; sourceTree = "<group>"; };
 		5603C8D5E15D2BBDC818AD3C /* Pods-weddingBudget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.release.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.release.xcconfig"; sourceTree = "<group>"; };
 		A3975850639F5CB38DF43BB2 /* Pods-weddingBudget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingBudget.debug.xcconfig"; path = "Target Support Files/Pods-weddingBudget/Pods-weddingBudget.debug.xcconfig"; sourceTree = "<group>"; };
 		B5385126245B2C28008F44BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -91,7 +103,9 @@
 		553938F42457333C0000F29C /* weddingBudget */ = {
 			isa = PBXGroup;
 			children = (
+				55393921245B33CD0000F29C /* Core Data */,
 				B5D2A33624578BAF00F046C6 /* Media */,
+				5539391E24588E650000F29C /* Pie Chart */,
 				5539390D245741840000F29C /* Model Controllers */,
 				5539390C2457417D0000F29C /* View Controllers */,
 				5539390B245741760000F29C /* Model */,
@@ -124,6 +138,8 @@
 				B5D2A3292457664700F046C6 /* SignUpViewController.swift */,
 				B5D2A32B2457666A00F046C6 /* HomeViewController.swift */,
 				B5D2A3302457718400F046C6 /* FirstViewController.swift */,
+				5539392D245B79000000F29C /* TaskRow.swift */,
+				5539392F245B7B370000F29C /* AddNewToDoTaskHeaderView.swift */,
 				B5A72D88245896C400C8D141 /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
@@ -138,12 +154,30 @@
 			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
+		5539391E24588E650000F29C /* Pie Chart */ = {
+			isa = PBXGroup;
+			children = (
+				5539391F24588E810000F29C /* PieChartViewController.swift */,
+			);
+			path = "Pie Chart";
+			sourceTree = "<group>";
+		};
+		55393921245B33CD0000F29C /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				55393922245B34060000F29C /* checklist.xcdatamodeld */,
+				55393925245B51660000F29C /* ChecklistItem.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		B5D2A32D24576E4F00F046C6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B5D2A32E24576EED00F046C6 /* Utilities.swift */,
 				B5D2A3342457841D00F046C6 /* Constants.swift */,
 				B5D2A33D2457977A00F046C6 /* TabBarController.swift */,
+				5539392B245B77D30000F29C /* Date+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -292,13 +326,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5D2A3282457663600F046C6 /* LoginViewController.swift in Sources */,
+				55393926245B51660000F29C /* ChecklistItem.swift in Sources */,
+				5539392E245B79000000F29C /* TaskRow.swift in Sources */,
 				B5D2A3352457841D00F046C6 /* Constants.swift in Sources */,
 				B5D2A32A2457664700F046C6 /* SignUpViewController.swift in Sources */,
+				5539392024588E810000F29C /* PieChartViewController.swift in Sources */,
 				5539391824574AE60000F29C /* LogIn.swift in Sources */,
 				B5D2A32C2457666A00F046C6 /* HomeViewController.swift in Sources */,
 				5539391424574ABF0000F29C /* logInController.swift in Sources */,
 				B5385127245B2C28008F44BD /* User.swift in Sources */,
 				B5D2A3312457718400F046C6 /* FirstViewController.swift in Sources */,
+				5539392C245B77D30000F29C /* Date+Extensions.swift in Sources */,
+				55393930245B7B370000F29C /* AddNewToDoTaskHeaderView.swift in Sources */,
+				55393924245B34060000F29C /* checklist.xcdatamodeld in Sources */,
 				5539391624574AD60000F29C /* CheckListViewController.swift in Sources */,
 				B5D2A32F24576EED00F046C6 /* Utilities.swift in Sources */,
 				B5D2A33E2457977A00F046C6 /* TabBarController.swift in Sources */,
@@ -512,6 +552,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55393922245B34060000F29C /* checklist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55393923245B34060000F29C /* checklist.xcdatamodel */,
+			);
+			currentVersion = 55393923245B34060000F29C /* checklist.xcdatamodel */;
+			name = checklist.xcdatamodeld;
+			path = "../Pie Chart/checklist.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 553938EA2457333C0000F29C /* Project object */;
 }
