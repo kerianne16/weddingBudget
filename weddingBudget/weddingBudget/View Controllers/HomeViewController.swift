@@ -7,24 +7,78 @@
 //
 
 import UIKit
+import Photos
+import CoreImage
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    let picker = UIDatePicker()
+    var imagePicker = UIImagePickerController()
 
-        // Do any additional setup after loading the view.
-    }
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var weddingDatePicker: UITextField!
     
+    override func viewDidLoad() {
+            super.viewDidLoad()
+    
+            createDatePicker()
+      }
 
-    /*
-    // MARK: - Navigation
+    func createDatePicker() {
+            
+            // toolbar
+            let toolbar = UIToolbar()
+            toolbar.sizeToFit()
+            
+            //done button
+            let done = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+            toolbar.setItems([done], animated: false)
+            
+           weddingDatePicker.inputAccessoryView = toolbar
+           weddingDatePicker.inputView = picker
+            
+            picker.datePickerMode = .date
+        }
+        
+        @objc func donePressed() {
+            
+            // format date
+            let formatter = DateFormatter()
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
+            let dateString = formatter.string(from: picker.date)
+            
+            weddingDatePicker.text = "\(dateString)"
+            self.view.endEditing(true)
+            
+        }
+        
+        @IBAction func saveButton(_ sender: Any) {
+        
+        }
+        
+        @IBAction func addPhotoButton(_ sender: Any) {
+         
+            let image = UIImagePickerController()
+            image.delegate = self
+            
+            image.sourceType = UIImagePickerController.SourceType.photoLibrary
+            image.allowsEditing = false
+            
+            self.present(image, animated: true) {
+            }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        }
+
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                
+                img.image = image }
+            else {
+            
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
 
 }
