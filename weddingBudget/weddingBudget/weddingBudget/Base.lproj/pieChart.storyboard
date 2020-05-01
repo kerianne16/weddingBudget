@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Budget-->
         <scene sceneID="ury-sk-h9R">
             <objects>
                 <viewController id="lVf-OU-i2l" customClass="PieChartViewController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,31 +15,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6lW-Vh-msZ" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="100" width="374" height="390"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lW-Vh-msZ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="100" width="375" height="390"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p9X-ve-20D">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p9X-ve-20D">
                                 <rect key="frame" x="18" y="758" width="299" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.17339339849999999" green="0.566222012" blue="0.53482222560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="295" id="hNg-zO-TsR"/>
+                                </constraints>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h16-40-TuQ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h16-40-TuQ">
                                 <rect key="frame" x="18" y="692" width="299" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.17339339849999999" green="0.566222012" blue="0.53482222560000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOTAL BUDGET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unE-Sd-cxI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL BUDGET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unE-Sd-cxI">
                                 <rect key="frame" x="20" y="729" width="129" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="v4t-ts-lVn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CATEGORIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIt-aR-f0P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIt-aR-f0P">
                                 <rect key="frame" x="20" y="663" width="111" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -50,17 +51,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r71-eX-rkW">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r71-eX-rkW">
                                 <rect key="frame" x="323" y="753" width="45" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floral2" translatesAutoresizingMaskIntoConstraints="NO" id="Pq5-l2-lmP">
+                                <rect key="frame" x="151" y="534" width="113" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Q8o-g5-6RM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="unE-Sd-cxI" firstAttribute="top" secondItem="h16-40-TuQ" secondAttribute="bottom" constant="8" id="1NE-fq-Ync"/>
+                            <constraint firstItem="h16-40-TuQ" firstAttribute="top" secondItem="Pq5-l2-lmP" secondAttribute="bottom" constant="74" id="1xn-p9-XBf"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="leading" secondItem="yIt-aR-f0P" secondAttribute="leading" id="51C-oz-9NB"/>
+                            <constraint firstItem="Pq5-l2-lmP" firstAttribute="centerX" secondItem="6lW-Vh-msZ" secondAttribute="centerX" id="7j8-Nu-mmH"/>
+                            <constraint firstItem="p9X-ve-20D" firstAttribute="trailing" secondItem="h16-40-TuQ" secondAttribute="trailing" id="F8U-r1-LH0"/>
+                            <constraint firstItem="p9X-ve-20D" firstAttribute="bottom" secondItem="r71-eX-rkW" secondAttribute="bottom" id="G98-Ut-Icp"/>
+                            <constraint firstItem="Pq5-l2-lmP" firstAttribute="top" secondItem="6lW-Vh-msZ" secondAttribute="bottom" constant="44" id="Gum-Qk-n48"/>
+                            <constraint firstItem="p9X-ve-20D" firstAttribute="top" secondItem="h16-40-TuQ" secondAttribute="bottom" constant="37" id="OB4-kB-9RP"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="leading" secondItem="p9X-ve-20D" secondAttribute="leading" id="QvH-QP-WAP"/>
+                            <constraint firstItem="7Zc-Hf-aB0" firstAttribute="bottom" secondItem="unE-Sd-cxI" secondAttribute="bottom" constant="46" id="RqI-rC-OOX"/>
+                            <constraint firstItem="7Zc-Hf-aB0" firstAttribute="bottom" secondItem="p9X-ve-20D" secondAttribute="bottom" constant="26" id="VJe-ba-gpT"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="leading" secondItem="unE-Sd-cxI" secondAttribute="leading" id="W3p-n3-n0U"/>
+                            <constraint firstItem="r71-eX-rkW" firstAttribute="leading" secondItem="p9X-ve-20D" secondAttribute="trailing" constant="8" id="WL6-nS-0A0"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="top" secondItem="7Zc-Hf-aB0" secondAttribute="top" constant="56" id="bP7-lg-6Tw"/>
+                            <constraint firstAttribute="bottom" secondItem="Pq5-l2-lmP" secondAttribute="bottom" constant="278" id="fmc-fW-8Ur"/>
+                            <constraint firstItem="unE-Sd-cxI" firstAttribute="top" secondItem="yIt-aR-f0P" secondAttribute="bottom" constant="28" id="gCN-oG-j35"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="leading" secondItem="7kA-6C-Eni" secondAttribute="leadingMargin" id="l2n-Td-8Jg"/>
+                            <constraint firstItem="7Zc-Hf-aB0" firstAttribute="trailing" secondItem="Pq5-l2-lmP" secondAttribute="trailing" constant="150" id="uHZ-lF-Xsc"/>
+                            <constraint firstItem="6lW-Vh-msZ" firstAttribute="leading" secondItem="h16-40-TuQ" secondAttribute="leading" id="yUu-al-JcU"/>
+                            <constraint firstItem="Pq5-l2-lmP" firstAttribute="leading" secondItem="7Zc-Hf-aB0" secondAttribute="leading" constant="151" id="zzn-ii-fpM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Zc-Hf-aB0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="chart.pie.fill" catalog="system" id="6cF-AQ-aqB"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="chart.pie.fill" catalog="system" selectedImage="chart.pie.fill" id="6cF-AQ-aqB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="categorySlider" destination="h16-40-TuQ" id="kN5-mP-YJb"/>
                         <outlet property="categoryTextField" destination="73N-tR-dOK" id="WFk-tt-Og5"/>
@@ -76,5 +105,6 @@
     </scenes>
     <resources>
         <image name="chart.pie.fill" catalog="system" width="128" height="124"/>
+        <image name="floral2" width="1184" height="663"/>
     </resources>
 </document>

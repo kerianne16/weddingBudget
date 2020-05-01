@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="bR6-JF-NqB">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="bqN-aY-fih" customClass="HomeViewController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,11 +56,18 @@
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the adventure begins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF0-Yx-tCn">
+                                <rect key="frame" x="138" y="768" width="139" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="19"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4Kt-8U-RNC"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="6bC-jT-Bfu"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="02-heart" id="6bC-jT-Bfu"/>
                     <navigationItem key="navigationItem" id="JR8-y7-T9b"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -72,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="-594.20289855072474" y="849.77678571428567"/>
         </scene>
-        <!--Item-->
+        <!--Checklist-->
         <scene sceneID="pXB-U7-SG7">
             <objects>
                 <viewController id="M7V-VG-VZD" customClass="CheckListViewController" customModule="weddingBudget" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,11 +89,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rrn-y7-0v5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="list.bullet" catalog="system" id="X4o-VV-dzT"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" image="list.bullet" catalog="system" selectedImage="list.bullet" id="X4o-VV-dzT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rsw-fE-rs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="548" y="98"/>
+            <point key="canvasLocation" x="345" y="98"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jsh-Jx-OYK">
@@ -100,8 +107,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="M7V-VG-VZD" kind="relationship" relationship="viewControllers" id="dUc-3t-BKm"/>
-                        <segue destination="ZCH-jg-2TU" kind="relationship" relationship="viewControllers" id="0nA-f7-AfW"/>
                         <segue destination="bqN-aY-fih" kind="relationship" relationship="viewControllers" id="S4Y-2Z-Zvg"/>
+                        <segue destination="ZCH-jg-2TU" kind="relationship" relationship="viewControllers" id="0nA-f7-AfW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHB-i3-bUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -280,7 +287,7 @@
         <scene sceneID="RUZ-Wi-Bmq">
             <objects>
                 <viewControllerPlaceholder storyboardName="pieChart" id="ZCH-jg-2TU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6oq-S3-EJX"/>
+                    <tabBarItem key="tabBarItem" title="Budget" image="chart.pie.fill" catalog="system" selectedImage="chart.pie.fill" id="6oq-S3-EJX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6S-dF-VGF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,6 +381,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="02-heart" width="32" height="32"/>
+        <image name="chart.pie.fill" catalog="system" width="128" height="124"/>
         <image name="floral2" width="1184" height="663"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="plus" catalog="system" width="128" height="113"/>
